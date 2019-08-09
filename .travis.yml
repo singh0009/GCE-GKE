@@ -15,7 +15,7 @@ before_install:
   - gcloud auth activate-service-account --key-file kubernetes-1-249219-53a206d698da.json
   - gcloud config set project kubernetes-1-249219
   - gcloud config set compute/zone us-central1-b
-  - gcloud container clusters get-credentials k8s-1
+  - gcloud container clusters get-credentials k8c-1
   ## - gcloud container clusters get-credentials k8s-1 --zone us-central1-a --project kubernetes-1-249219
   - docker login -u "$DOCKER_ID" --password  $DOCKER_PASSWORD
   - docker build -t singh0009/react-test -f ./client/Dockerfile.dev ./client
