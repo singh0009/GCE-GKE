@@ -12,7 +12,7 @@ before_install:
   - curl https://sdk.cloud.google.com | bash > /dev/null;
   - source $HOME/google-cloud-sdk/path.bash.inc
   - gcloud components update kubectl
-  - gcloud auth activate-service-account --key-file service-account.json
+  - gcloud auth activate-service-account --key-file kubernetes-1-249219-53a206d698da.json
   - gcloud config set project kubernetes-1-249219
   - gcloud config set compute/zone us-central1-b
   - gcloud container clusters get-credentials k8s-1
